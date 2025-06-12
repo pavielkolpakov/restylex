@@ -641,7 +641,7 @@ export function Scene() {
   }, []);
 
   return (
-    <div className="h-svh w-screen relative bg-black">
+    <div className="h-svh relative bg-black">
       <Canvas
         shadows
         gl={{

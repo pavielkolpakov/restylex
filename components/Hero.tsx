@@ -3,7 +3,7 @@ import { Scene } from "@/components/ui/rubik-s-cube";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-screen relative flex flex-col justify-center items-center">
+    <div className="h-screen relative flex flex-col justify-center items-center">
       <div className="absolute inset-0">
         <Scene />
       </div>
