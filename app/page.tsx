@@ -1,7 +1,14 @@
 import Hero from "../components/Hero";
-import Features from "../components/Features";
-import Pricing from "../components/Pricing";
+import Services from "../components/Services";
+import Process from "../components/Process";
+import Portfolio from "../components/Portfolio";
+import PricingNew from "../components/PricingNew";
+import About from "../components/About";
+import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
+import FAQ from "../components/FAQ";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -9,9 +16,16 @@ export default function Home() {
       <Header />
       <main className="min-h-screen">
         <Hero />
-        <Features />
-        <Pricing />
+        <Services />
+        <Process />
+        <Portfolio />
+        <PricingNew />
+        <About />
+        <Testimonials />
+        <Contact />
+        <FAQ />
       </main>
+      <Footer />
     </>
   );
 }
