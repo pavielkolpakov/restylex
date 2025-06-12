@@ -1,5 +1,13 @@
 import React from "react";
-import { FiMail, FiPhone, FiMapPin, FiClock, FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
+  FiClock,
+  FiLinkedin,
+  FiTwitter,
+  FiInstagram,
+} from "react-icons/fi";
 
 const Contact = () => {
   return (
@@ -7,10 +15,15 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Let's Start Your Project
+            Let&apos;s Start Your Project
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your digital presence? Get in touch and let's discuss how we can help you achieve your goals.
+            Let&apos;s discuss your project and see how we can help bring your
+            vision to life.
+          </p>
+          <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+            We&apos;re excited to hear from you and explore the possibilities
+            together.
           </p>
         </div>
 
@@ -19,7 +32,10 @@ const Contact = () => {
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="firstName" className="block text-white mb-2 font-medium">
+                  <label
+                    htmlFor="firstName"
+                    className="block text-white mb-2 font-medium"
+                  >
                     First Name
                   </label>
                   <input
@@ -30,7 +46,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="lastName" className="block text-white mb-2 font-medium">
+                  <label
+                    htmlFor="lastName"
+                    className="block text-white mb-2 font-medium"
+                  >
                     Last Name
                   </label>
                   <input
@@ -41,9 +60,12 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
-                <label htmlFor="email" className="block text-white mb-2 font-medium">
+                <label
+                  htmlFor="email"
+                  className="block text-white mb-2 font-medium"
+                >
                   Email Address
                 </label>
                 <input
@@ -55,7 +77,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-white mb-2 font-medium">
+                <label
+                  htmlFor="company"
+                  className="block text-white mb-2 font-medium"
+                >
                   Company
                 </label>
                 <input
@@ -67,7 +92,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="service" className="block text-white mb-2 font-medium">
+                <label
+                  htmlFor="service"
+                  className="block text-white mb-2 font-medium"
+                >
                   Service Interested In
                 </label>
                 <select
@@ -84,7 +112,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-white mb-2 font-medium">
+                <label
+                  htmlFor="message"
+                  className="block text-white mb-2 font-medium"
+                >
                   Project Details
                 </label>
                 <textarea
@@ -142,17 +173,24 @@ const Contact = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-bold text-white mb-4">
-                Follow Us
-              </h4>
+              <h4 className="text-xl font-bold text-white mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300">
+                <a
+                  href="#"
+                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300"
+                >
                   <FiLinkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300">
+                <a
+                  href="#"
+                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300"
+                >
                   <FiTwitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300">
+                <a
+                  href="#"
+                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300"
+                >
                   <FiInstagram className="w-5 h-5" />
                 </a>
               </div>
@@ -163,8 +201,8 @@ const Contact = () => {
                 Quick Response Guarantee
               </h4>
               <p className="text-gray-400 text-sm leading-relaxed">
-                We respond to all inquiries within 24 hours. For urgent projects, 
-                call us directly for immediate assistance.
+                We respond to all inquiries within 24 hours. For urgent
+                projects, call us directly for immediate assistance.
               </p>
             </div>
           </div>

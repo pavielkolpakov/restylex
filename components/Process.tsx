@@ -1,30 +1,34 @@
 import React from "react";
-import { FiSearch, FiPenTool, FiCheckCircle, FiRocket } from "react-icons/fi";
+import { FiSearch, FiPenTool, FiCheckCircle, FiZap } from "react-icons/fi";
 
 const Process = () => {
   const steps = [
     {
       icon: <FiSearch className="w-8 h-8" />,
       title: "Discovery & Planning",
-      description: "We dive deep into your business goals, target audience, and competitive landscape to create a strategic foundation.",
+      description:
+        "We dive deep into your business goals, target audience, and competitive landscape to create a strategic foundation.",
       number: "01",
     },
     {
       icon: <FiPenTool className="w-8 h-8" />,
       title: "Design & Development",
-      description: "Our team crafts beautiful, functional solutions that align with your brand and exceed user expectations.",
+      description:
+        "Our team crafts beautiful, functional solutions that align with your brand and exceed user expectations.",
       number: "02",
     },
     {
       icon: <FiCheckCircle className="w-8 h-8" />,
       title: "Testing & Refinement",
-      description: "Rigorous testing ensures every element works flawlessly across all devices and user scenarios.",
+      description:
+        "Rigorous testing ensures every element works flawlessly across all devices and user scenarios.",
       number: "03",
     },
     {
-      icon: <FiRocket className="w-8 h-8" />,
+      icon: <FiZap className="w-8 h-8" />,
       title: "Launch & Support",
-      description: "We handle the launch process and provide ongoing support to ensure your continued success.",
+      description:
+        "We handle the launch process and provide ongoing support to ensure your continued success.",
       number: "04",
     },
   ];
@@ -37,7 +41,8 @@ const Process = () => {
             Our Process
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            A proven methodology that delivers exceptional results through careful planning and meticulous execution
+            A proven methodology that delivers exceptional results through
+            careful planning and meticulous execution
           </p>
         </div>
 

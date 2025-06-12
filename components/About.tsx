@@ -6,27 +6,38 @@ const About = () => {
     {
       icon: <FiTarget className="w-8 h-8" />,
       title: "Purpose-Driven",
-      description: "Every project serves a clear business objective and delivers measurable results.",
+      description:
+        "Every project serves a clear business objective and delivers measurable results.",
     },
     {
       icon: <FiUsers className="w-8 h-8" />,
       title: "Collaborative",
-      description: "We work as an extension of your team, ensuring seamless communication and alignment.",
+      description:
+        "We work as an extension of your team, ensuring seamless communication and alignment.",
     },
     {
       icon: <FiAward className="w-8 h-8" />,
       title: "Excellence",
-      description: "We maintain the highest standards in design, development, and client service.",
+      description:
+        "We maintain the highest standards in design, development, and client service.",
     },
     {
       icon: <FiTrendingUp className="w-8 h-8" />,
       title: "Growth-Focused",
-      description: "Our solutions are designed to scale with your business and adapt to future needs.",
+      description:
+        "Our solutions are designed to scale with your business and adapt to future needs.",
     },
   ];
 
   const technologies = [
-    "React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "Figma", "Adobe Creative Suite"
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Python",
+    "AWS",
+    "Figma",
+    "Adobe Creative Suite",
   ];
 
   return (
@@ -39,17 +50,19 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                Founded with a vision to bridge the gap between exceptional design and business success, 
-                Restylex has been transforming digital experiences for forward-thinking companies since 2020.
+                Founded with a vision to bridge the gap between exceptional
+                design and business success, Restylex has been transforming
+                digital experiences for forward-thinking companies since 2020.
               </p>
               <p>
-                Our team combines creative excellence with technical expertise, delivering solutions that 
-                not only look stunning but drive real business results. We believe that great design is 
-                invisible – it simply works.
+                We&apos;re a team of passionate developers and designers
+                dedicated to creating exceptional digital experiences.
               </p>
               <p>
-                From startups to Fortune 500 companies, we've helped businesses across industries establish 
-                their digital presence and achieve sustainable growth through strategic design and development.
+                From startups to Fortune 500 companies, we&apos;ve helped
+                businesses across industries establish their digital presence
+                and achieve sustainable growth through strategic design and
+                development.
               </p>
             </div>
           </div>
@@ -81,9 +94,7 @@ const About = () => {
             {values.map((value, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 border-2 border-white flex items-center justify-center mx-auto mb-6">
-                  <div className="text-white">
-                    {value.icon}
-                  </div>
+                  <div className="text-white">{value.icon}</div>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-4">
                   {value.title}

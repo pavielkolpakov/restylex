@@ -7,42 +7,48 @@ const Portfolio = () => {
       title: "E-commerce Platform",
       category: "Web Development",
       description: "Modern online store with seamless checkout experience",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       metrics: "+150% conversion rate",
     },
     {
       title: "Brand Identity System",
       category: "Brand Design",
       description: "Complete visual identity for tech startup",
-      image: "https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=800",
       metrics: "40% brand recognition increase",
     },
     {
       title: "SaaS Dashboard",
       category: "UI/UX Design",
       description: "Intuitive analytics platform for data visualization",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       metrics: "60% user engagement boost",
     },
     {
       title: "Mobile App Design",
       category: "Mobile Development",
       description: "Cross-platform app with native performance",
-      image: "https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=800",
       metrics: "4.8★ app store rating",
     },
     {
       title: "Marketing Campaign",
       category: "Digital Marketing",
       description: "Multi-channel campaign driving qualified leads",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       metrics: "300% lead generation increase",
     },
     {
       title: "Corporate Website",
       category: "Web Development",
       description: "Professional presence for Fortune 500 company",
-      image: "https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=800",
       metrics: "85% faster load times",
     },
   ];
@@ -54,8 +60,8 @@ const Portfolio = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
             Our Portfolio
           </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            Discover how we've helped businesses transform their digital presence and achieve remarkable results
+          <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+            Here&apos;s a showcase of our recent work and successful projects.
           </p>
         </div>
 
@@ -75,7 +81,9 @@ const Portfolio = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
               </div>
               <div className="p-6">
-                <div className="text-sm text-gray-500 mb-2">{project.category}</div>
+                <div className="text-sm text-gray-500 mb-2">
+                  {project.category}
+                </div>
                 <h3 className="text-xl font-semibold text-black mb-3 group-hover:text-gray-700 transition-colors duration-300">
                   {project.title}
                 </h3>
