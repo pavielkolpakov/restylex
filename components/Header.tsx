@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="/cube.png" alt="Cube logo" className="h-8" />
+            <Image src="/cube.png" width={20} height={20} alt="Cube logo" />
             <span className="text-2xl font-bold text-white">Restylex</span>
           </div>
 
