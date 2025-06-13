@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Process from "../components/Process";
-import Portfolio from "../components/Portfolio";
 import Pricing from "../components/Pricing";
 import About from "../components/About";
 import Testimonials from "../components/Testimonials";
