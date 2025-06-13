@@ -68,7 +68,7 @@ const PricingNew = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative p-8 bg-white border-2 transition-all duration-300 hover:shadow-lg ${
+              className={`relative p-8 bg-white border-2 transition-all duration-300 hover:shadow-lg flex flex-col ${
                 plan.popular
                   ? "border-black shadow-lg"
                   : "border-gray-200 hover:border-gray-300"
@@ -104,16 +104,18 @@ const PricingNew = () => {
                 ))}
               </div>
 
-              <button
-                className={`w-full py-4 px-6 font-semibold transition-all duration-300 flex items-center justify-center group ${
-                  plan.popular
-                    ? "bg-black text-white hover:bg-gray-800"
-                    : "bg-white text-black border-2 border-black hover:bg-black hover:text-white"
-                }`}
-              >
-                Get Started
-                <FiArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+              <div className="mt-auto">
+                <button
+                  className={`w-full py-4 px-6 font-semibold transition-all duration-300 flex items-center justify-center group cursor-pointer ${
+                    plan.popular
+                      ? "bg-black text-white hover:bg-gray-800"
+                      : "bg-white text-black border-2 border-black hover:bg-black hover:text-white"
+                  }`}
+                >
+                  Get Started
+                  <FiArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
+              </div>
             </div>
           ))}
         </div>
