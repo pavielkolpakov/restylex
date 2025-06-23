@@ -11,7 +11,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className="py-24 bg-black" id="contact">
+    <section className="py-24 bg-black rounded-3xl" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
@@ -41,7 +41,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="firstName"
-                    className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
                     placeholder="John"
                   />
                 </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="lastName"
-                    className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
                     placeholder="Doe"
                   />
                 </div>
@@ -71,7 +71,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
                   placeholder="john@example.com"
                 />
               </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="company"
-                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
                   placeholder="Your Company"
                 />
               </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                 </label>
                 <select
                   id="service"
-                  className="w-full px-4 py-3 bg-black border border-gray-600 text-white focus:border-white focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-black border border-gray-600 text-white focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
                 >
                   <option value="">Select a service</option>
                   <option value="website">Website Development</option>
@@ -121,14 +121,14 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows={6}
-                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 resize-none rounded-lg"
                   placeholder="Tell us about your project, goals, and timeline..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-white text-black py-4 px-8 font-semibold hover:bg-gray-200 transition-colors duration-300"
+                className="w-full bg-white text-black py-4 px-8 font-semibold hover:bg-gray-200 transition-colors duration-300 rounded-lg"
               >
                 Send Message
               </button>
@@ -177,26 +177,26 @@ const Contact = () => {
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300"
+                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300 rounded-lg"
                 >
                   <FiLinkedin className="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300"
+                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300 rounded-lg"
                 >
                   <FiTwitter className="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300"
+                  className="w-12 h-12 border border-gray-600 flex items-center justify-center text-gray-400 hover:border-white hover:text-white transition-all duration-300 rounded-lg"
                 >
                   <FiInstagram className="w-5 h-5" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 border border-gray-800">
+            <div className="bg-gray-900 p-6 border border-gray-800 rounded-lg">
               <h4 className="text-lg font-semibold text-white mb-3">
                 Quick Response Guarantee
               </h4>
