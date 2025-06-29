@@ -4,7 +4,7 @@ import GetButton from "./ui/GetButton";
 
 const Header = () => {
   return (
-    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[75%]">
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[75%]">
       {/* Solid black background with slight transparency */}
       <div className="absolute h-16 inset-0 bg-black/95 rounded-xl" />
 
@@ -17,7 +17,9 @@ const Header = () => {
               Restylex
             </span>
           </div>
-          <GetButton />
+          <div className="scale-90 sm:scale-100">
+            <GetButton />
+          </div>
         </div>
       </div>
     </header>
