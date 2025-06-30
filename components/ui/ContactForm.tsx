@@ -1,6 +1,15 @@
 "use client";
 
 import React from "react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const ContactForm = () => {
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -11,7 +20,7 @@ const ContactForm = () => {
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -27,14 +36,17 @@ const ContactForm = () => {
     <form className="space-y-6" onSubmit={onSubmit}>
       <div>
         <div>
-          <label htmlFor="firstName" className="block text-white mb-2 font-medium">
+          <label
+            htmlFor="firstName"
+            className="block text-white mb-2 font-medium"
+          >
             Full Name
           </label>
-          <input
+          <Input
             type="text"
             name="name"
             required
-            className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
+            className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
             placeholder="John"
           />
         </div>
@@ -44,11 +56,11 @@ const ContactForm = () => {
         <label htmlFor="email" className="block text-white mb-2 font-medium">
           Email Address
         </label>
-        <input
+        <Input
           type="email"
           name="email"
           required
-          className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
+          className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
           placeholder="john@example.com"
         />
       </div>
@@ -57,11 +69,11 @@ const ContactForm = () => {
         <label htmlFor="company" className="block text-white mb-2 font-medium">
           Company
         </label>
-        <input
+        <Input
           type="text"
           name="company"
           required
-          className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
+          className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
           placeholder="Your Company"
         />
       </div>
@@ -70,29 +82,29 @@ const ContactForm = () => {
         <label htmlFor="service" className="block text-white mb-2 font-medium">
           Service Interested In
         </label>
-        <select
-          name="service"
-          required
-          className="w-full px-4 py-3 bg-black border border-gray-600 text-white focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
-        >
-          <option value="">Select a plan</option>
-          <option value="base">Base</option>
-          <option value="advanced">Advanced</option>
-          <option value="custom">Custom</option>
-        </select>
+        <Select name="service" required>
+          <SelectTrigger className="w-full !h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg">
+            <SelectValue placeholder="Select a plan" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="base">Base</SelectItem>
+            <SelectItem value="advanced">Advanced</SelectItem>
+            <SelectItem value="custom">Custom</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
       <div>
         <label htmlFor="message" className="block text-white mb-2 font-medium">
           Project Details
         </label>
-        <textarea
+        <Textarea
           name="message"
           required
           rows={6}
-          className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 resize-none rounded-lg"
+          className="w-full h-32 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 resize-none rounded-lg"
           placeholder="Tell us about your project, goals, and timeline..."
-        ></textarea>
+        />
       </div>
 
       <button
