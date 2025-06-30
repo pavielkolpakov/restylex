@@ -8,6 +8,7 @@ import {
   FiTwitter,
   FiInstagram,
 } from "react-icons/fi";
+import ContactForm from "./ui/ContactForm";
 
 const Contact = () => {
   return (
@@ -29,110 +30,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-white mb-2 font-medium"
-                  >
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="lastName"
-                    className="block text-white mb-2 font-medium"
-                  >
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-white mb-2 font-medium"
-                >
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="company"
-                  className="block text-white mb-2 font-medium"
-                >
-                  Company
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
-                  placeholder="Your Company"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="service"
-                  className="block text-white mb-2 font-medium"
-                >
-                  Service Interested In
-                </label>
-                <select
-                  id="service"
-                  className="w-full px-4 py-3 bg-black border border-gray-600 text-white focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
-                >
-                  <option value="">Select a service</option>
-                  <option value="website">Website Development</option>
-                  <option value="branding">Brand Identity</option>
-                  <option value="content">Content Creation</option>
-                  <option value="custom">Custom Solutions</option>
-                  <option value="marketing">Digital Marketing</option>
-                </select>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-white mb-2 font-medium"
-                >
-                  Project Details
-                </label>
-                <textarea
-                  id="message"
-                  rows={6}
-                  className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 resize-none rounded-lg"
-                  placeholder="Tell us about your project, goals, and timeline..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-white text-black py-4 px-8 font-semibold hover:bg-gray-200 transition-colors duration-300 rounded-lg"
-              >
-                Send Message
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
           <div className="space-y-8">
