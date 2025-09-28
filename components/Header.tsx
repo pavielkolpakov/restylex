@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import GetButton from "./ui/GetButton";
+import { HyperText } from "./ui/hyper-text";
 
 const Header = () => {
   return (
@@ -14,7 +13,11 @@ const Header = () => {
           </span>
         </div>
         <div className="scale-90 sm:scale-100">
-          Get Started
+          <HyperText 
+            className="cursor-pointer" 
+            text="Start"
+            duration={400}
+          />
         </div>
       </div>
     </header>
