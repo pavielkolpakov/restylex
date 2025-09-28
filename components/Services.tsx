@@ -1,10 +1,10 @@
 import React from "react";
 import {
   FiCode,
+  FiGlobe,
   FiTrendingUp,
-  FiTarget,
-  FiEdit3,
-  FiPenTool 
+  FiMonitor,
+  FiEdit3
 } from "react-icons/fi";
 import { FaRobot } from "react-icons/fa";
 
@@ -14,14 +14,15 @@ const Services = () => {
       icon: <FiCode className="w-8 h-8" />,
       title: "Website Development",
       description:
-        "Custom-built websites that convert visitors into customers with modern design and seamless functionality.",
+        "From simple landing pages to complex multi-page websites, we build them all with modern design and seamless functionality.",
     },
     {
-      icon: <FiPenTool className="w-8 h-8" />,
-      title: "Brand Identity",
+      icon: <FiGlobe className="w-8 h-8" />,
+      title: "Domain & Hosting",
       description:
-        "Distinctive visual identities that capture your brand essence and resonate with your target audience.",
+        "1 year prepaid domain and hosting setup included in all packages.",
     },
+    //Todo: change content creation
     {
       icon: <FiEdit3 className="w-8 h-8" />,
       title: "Content Creation",
@@ -35,10 +36,10 @@ const Services = () => {
         "Combining advanced SEO and targeted marketing campaigns, we bring more traffic to your site and more customers to your business.",
     },
     {
-      icon: <FiTarget className="w-8 h-8" />,
+      icon: <FiMonitor className="w-8 h-8" />,
       title: "Custom Solutions",
       description:
-        "Tailored digital solutions designed specifically for your unique business challenges and goals.",
+        "Charts, widgets, dashboards, third party analytic services... just about anything you can think of, we can build it for you.",
     },
     {
       icon: <FaRobot className="w-8 h-8" />,
@@ -56,9 +57,14 @@ const Services = () => {
             What We Do
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            Need a MODERN looking website for your business but scared of the complexity, expenses or developing process? We will handle 
-            everything — from designing and developing to buying the domain, setting up hosting, and deploying it online. 
-            Just give us some information about your brand and we will prepare everything for you in DAYS
+            It&apos;s common for small businesses to have outdated websites — or none at all.
+          </p>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+            Unfortunately, this is costing them countless valuable opportunities to reach potential clients. 
+          </p>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+            At Restylex, we specialize in building modern websites of any complexity, 
+            paired with effective marketing strategies and AI solutions to ensure your business not only attracts visitors but converts them into clients.
           </p>
         </div>
 

@@ -39,7 +39,7 @@ const Process = () => {
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
           Getting started is simple. Fill out our contact form and tell us about your project — your ideas, goals, and any assets you have. 
-          Or, if you prefer, book a consulting call with us to discuss how your website will look, feel, and work for your business.
+          You can also book a consulting call with us to discuss how your website will look, feel, and work for your business.
           </p>
         </div>
 

@@ -8,10 +8,10 @@ const Hero = () => {
         <Scene />
       </div>
       <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 md:mb-6 tracking-tight mix-blend-difference text-white text-center px-4 md:px-6">
-        Update Your Website
+        Elevate Your Business
       </h1>
-      <p className="text-base sm:text-lg md:text-xl text-white mix-blend-exclusion max-w-2xl px-4 md:px-6 leading-relaxed text-center">
-        Or Get Started with a New One
+      <p className="text-base sm:text-lg md:text-2xl text-white mix-blend-exclusion max-w-2xl px-4 md:px-6 leading-relaxed text-center">
+        With a Modern, Fresh Looking Website, AI Agents and Smart Marketing Solutions
       </p>
     </div>
   );
