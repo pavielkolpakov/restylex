@@ -50,7 +50,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="before:bg-white before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">

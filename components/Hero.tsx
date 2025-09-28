@@ -3,6 +3,7 @@ import { Scene } from "@/components/ui/rubik-s-cube";
 
 const Hero = () => {
   return (
+    <section className="before:bg-black before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9">
     <div className="h-screen relative flex flex-col justify-center items-center">
       <div className="absolute inset-0">
         <Scene />
@@ -14,6 +15,7 @@ const Hero = () => {
         With a Modern, Fresh Looking Website, AI Agents and Smart Marketing Solutions
       </p>
     </div>
+    </section>
   );
 };
 

@@ -4,22 +4,17 @@ import GetButton from "./ui/GetButton";
 
 const Header = () => {
   return (
-    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[75%]">
-      {/* Solid black background with slight transparency */}
-      <div className="absolute h-16 inset-0 bg-black/95 rounded-xl" />
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Image src="/cube.png" width={20} height={20} alt="Cube logo" />
-            <span className="text-xl font-medium text-white tracking-tight">
-              Restylex
-            </span>
-          </div>
-          <div className="scale-90 sm:scale-100">
-            <GetButton />
-          </div>
+    <header className="mb-px mix-blend-difference bg-black text-white shadow-[0px_0px_0px_0px_rgba(250,250,250,0),0px_0px_0px_0px_rgba(250,250,250,0),0px_0px_0px_1px_rgba(250,250,250,0.1)] fixed w-full z-10">
+      <div className="px-6 md:px-26 flex items-center justify-between w-full h-16">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          {/* <Image src="/cube.png" width={20} height={20} alt="Cube logo" /> */}
+          <span className="text-3xl font-bold tracking-tight">
+            Restylex
+          </span>
+        </div>
+        <div className="scale-90 sm:scale-100">
+          Get Started
         </div>
       </div>
     </header>
