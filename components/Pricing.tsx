@@ -58,7 +58,7 @@ const PricingNew = () => {
   ];
 
   return (
-    <section className="md:py-14 py-8 before:bg-white before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9" id="pricing">
+    <section className="md:pb-14 py-8 before:bg-white before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
