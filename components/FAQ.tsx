@@ -2,53 +2,43 @@
 import React, { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
-const FAQ = () => {
+const FAQ = () =>
+{
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
     {
-      question: "What's included in your web development service?",
-      answer:
-        "Our web development service includes custom design, responsive development, SEO optimization, content management system integration, security setup, performance optimization, and ongoing support. We also provide training on how to manage your website content.",
+      question: "How long does it take to build my website?",
+      answer: "For a simple landing page (Base Plan), we deliver in maximum 3 days. More advanced or custom websites may take from 1 to 4 weeks, depending on complexity and features.",
     },
     {
-      question: "How long does a typical project take?",
-      answer:
-        "Project timelines vary based on complexity. A basic website typically takes 4-6 weeks, while more complex projects with custom functionality can take 8-12 weeks. We provide detailed timelines during our initial consultation and keep you updated throughout the process.",
+      question: "Do I need to provide content for the website?",
+      answer: "Not necessarily. If you already have text, images, or branding, we’ll use them. If not, we can create content for you — including copywriting, visuals, and even blog/social media content as part of our advanced or custom plans.",
     },
     {
-      question: "Do you provide ongoing support after launch?",
-      answer:
-        "Yes, all our packages include post-launch support. This covers technical issues, content updates, security monitoring, and performance optimization. We offer different support levels depending on your needs, from basic maintenance to comprehensive ongoing development.",
+      question: "Can you help me get more traffic after the website is live?",
+      answer: "Yes! Alongside web development, we provide SEO optimization and marketing strategies designed to bring traffic, generate leads, and increase conversions.",
     },
     {
-      question: "Can you work with our existing brand guidelines?",
-      answer:
-        "Absolutely! We can work within your existing brand guidelines or help you develop new ones. Our team is experienced in translating brand identities into digital experiences while maintaining consistency across all touchpoints.",
+      question: "What's about AI integrations?",
+      answer: "With our Custom plan, we can integrate AI chatbots, smart forms, automation tools, online booking widgets and dashboards to make your website more interactive and efficient.",
     },
     {
-      question: "What's your process for custom projects?",
-      answer:
-        "Our custom project process begins with a discovery phase to understand your unique requirements. We then create a detailed proposal with timeline and pricing, followed by iterative design and development phases with regular client feedback sessions.",
+      question: "How do I get started?",
+      answer: "Simply fill out our contact form or book a free consultation call. Share some basic info about your brand and goals, and we’ll prepare everything to get your website live in just a few days.",
     },
     {
-      question: "Do you offer SEO and digital marketing services?",
-      answer:
-        "Yes, we provide comprehensive SEO optimization and digital marketing services. This includes keyword research, on-page optimization, content strategy, social media integration, and performance tracking to help improve your online visibility and reach.",
+      question: "Why can’t I use any of the modern AI website building tools?",
+      answer: "We all know that being a business owner is a busy job, and you probably don’t have time to handle everything on your own. Even if you manage to build a good-looking website with solid content, you still need to deploy and host it, then deal with domain settings. And most importantly — how will you actually get visitors to your website?",
     },
     {
-      question: "What technologies do you use?",
-      answer:
-        "We use modern, industry-standard technologies including React, Next.js, TypeScript, Node.js, and various CMS platforms. Our technology choices are always based on what's best for your specific project requirements and long-term goals.",
-    },
-    {
-      question: "Can you help migrate our existing website?",
-      answer:
-        "Yes, we handle website migrations carefully to ensure no data loss and minimal downtime. We analyze your current site, plan the migration strategy, and execute the transfer while preserving SEO rankings and user experience.",
-    },
+      question: "If it’s so complicated, why not just hire a full-time web developer?",
+      answer: "Good luck! The annual cost of a full-time design engineer capable of design, front-end development, backend development, and database design exceeds $200,000, plus benefits. That’s before you factor in recruiting costs, interview time, and ongoing management. What’s great about Restylex is that you get the highest quality outcome with low risk. It’s a rare win-win.",
+    }
   ];
 
-  const toggleFAQ = (index: number) => {
+  const toggleFAQ = (index: number) =>
+  {
     setOpenIndex(openIndex === index ? null : index);
   };
 
