@@ -26,12 +26,6 @@ const Header = () => {
             duration={400}
             conteinerId="contact"
           />
-          <HyperText 
-            className="cursor-pointer" 
-            text="Blog"
-            duration={400}
-            conteinerId="blog"
-          />
         </div>
       </div>
     </header>

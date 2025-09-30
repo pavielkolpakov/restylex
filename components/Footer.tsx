@@ -1,35 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
 import Link from "next/link";
 import { HyperText } from "./ui/hyper-text";
 
 const Footer = () =>
 {
-  const services = [
-    "Website Development",
-    "Brand Identity",
-    "Content Creation",
-    "Custom Solutions",
-    "Digital Marketing",
-    "SEO Optimization"
-  ];
-
-  const company = [
-    "About Us",
-    "Our Process",
-    "Portfolio",
-    "Careers",
-    "Blog",
-    "Contact"
-  ];
-
-  const legal = [
-    "Privacy Policy",
-    "Terms of Service",
-    "Cookie Policy",
-    "GDPR Compliance"
-  ];
 
   return (
     <footer className="bg-black text-white before:bg-black before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9">
