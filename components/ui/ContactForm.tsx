@@ -33,7 +33,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="space-y-6" onSubmit={onSubmit}>
+    <form className="space-y-6 md:w-[60%] w-full" onSubmit={onSubmit}>
       <div>
         <div>
           <label

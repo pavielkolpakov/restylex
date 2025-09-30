@@ -11,14 +11,15 @@ interface HyperTextProps {
   framerProps?: Variants;
   className?: string;
   animateOnLoad?: boolean;
+  conteinerId?: string;
 }
 
 const alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const getRandomInt = (max: number) => Math.floor(Math.random() * max);
 
-const scrollToContact: VoidFunction = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+const scrollToContact = (container: string) => {
+    document.getElementById(container)?.scrollIntoView({ behavior: "smooth" });
 };
 
 export function HyperText({
@@ -31,6 +32,7 @@ export function HyperText({
   },
   className,
   animateOnLoad = true,
+  conteinerId = 'default',
 }: HyperTextProps) {
   const [displayText, setDisplayText] = useState(text.split(""));
   const [trigger, setTrigger] = useState(false);
@@ -74,9 +76,9 @@ export function HyperText({
 
   return (
     <div
-      className="flex scale-100 cursor-default overflow-hidden py-2"
+      className="flex scale-100 cursor-pointer overflow-hidden py-2"
       onMouseEnter={triggerAnimation}
-      onClick={scrollToContact}
+      onClick={() => scrollToContact(conteinerId)}
     >
       <AnimatePresence mode="wait">
         {displayText.map((letter, i) => (
