@@ -3,20 +3,20 @@ import ContactForm from "./ui/ContactForm";
 
 const Contact = () => {
   return (
-    <section className="md:pb-18 bg-black before:bg-black before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9" id="contact">
+    <section className="md:py-14 py-8 bg-black before:bg-black before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Let&apos;s Start Your Project
           </h2>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+          {/* <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
             Let&apos;s discuss your project and see how we can help bring your
             vision to life.
           </p>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
             We&apos;re excited to hear from you and explore the possibilities
             together.
-          </p>
+          </p> */}
         </div>
 
         <div className="w-full flex justify-center items-center">

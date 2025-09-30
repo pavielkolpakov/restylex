@@ -31,7 +31,7 @@ const Process = () => {
   ];
 
   return (
-    <section className="md:pb-18 bg-black before:bg-black before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9">
+    <section className="md:py-14 py-8 bg-black before:bg-black before:block before:h-16 before:sticky before:top-0 before:w-full before:z-9">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
