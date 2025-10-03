@@ -9,14 +9,9 @@ const Contact = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Let&apos;s Start Your Project
           </h2>
-          {/* <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            Let&apos;s discuss your project and see how we can help bring your
-            vision to life.
-          </p>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            We&apos;re excited to hear from you and explore the possibilities
-            together.
-          </p> */}
+            Fill out the form below with your project details or let us know that you want to book a consulting call and we&apos;ll get back to you in 24 hours.
+          </p>
         </div>
 
         <div className="w-full flex justify-center items-center">

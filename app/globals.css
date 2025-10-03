@@ -6,7 +6,7 @@
 }
 
 .contact-input {
-  @apply w-full px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-sm;
+  @apply w-full px-4 py-3 bg-transparent border text-white placeholder-white focus:outline-none transition-colors duration-300 rounded-sm;
 }
 
 @custom-variant dark (&:is(.dark *));

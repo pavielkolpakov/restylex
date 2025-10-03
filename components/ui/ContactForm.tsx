@@ -3,7 +3,8 @@
 import React, { useState, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
+import
+{
   Select,
   SelectContent,
   SelectItem,
@@ -85,54 +86,36 @@ const ContactForm = () =>
     <form className="space-y-6 md:w-[60%] w-full" onSubmit={onSubmit}>
       <div>
         <div>
-          <label
-            htmlFor="firstName"
-            className="contact-field"
-          >
-            Full Name
-          </label>
           <Input
             type="text"
             name="name"
-            required
             className={`contact-input h-12 ${errors.name ? 'border-red-500 focus:border-red-500' : ''}`}
-            placeholder="John"
+            placeholder="Full Name"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="email" className="contact-field">
-          Email Address
-        </label>
         <Input
           type="email"
           name="email"
-          required
-          className={`contact-input h-12 ${errors.email ? 'border-red-500 focus:border-red-500' : ''}`}
-          placeholder="john@example.com"
+          className={`contact-input h-12 ${errors.email ? 'border-red-500 focus:border-red-500' : 'border-gray-600 focus:border-white'}`}
+          placeholder="Email"
         />
       </div>
 
       <div>
-        <label htmlFor="company" className="contact-field">
-          Company
-        </label>
         <Input
           type="text"
           name="company"
-          required
-          className={`contact-input h-12 ${errors.company ? 'border-red-500 focus:border-red-500' : ''}`}
-          placeholder="Your Company"
+          className={`contact-input h-12 ${errors.company ? 'border-red-500 focus:border-red-500' : 'border-gray-600 focus:border-white'}`}
+          placeholder="Company Name"
         />
       </div>
 
       <div>
-        <label htmlFor="service" className="contact-field">
-          Service Interested In
-        </label>
-        <Select name="service" required>
-          <SelectTrigger className={`contact-input !h-12 ${errors.service ? 'border-red-500 focus:border-red-500' : ''}`}>
+        <Select name="service">
+          <SelectTrigger className={`contact-input !h-12 ${errors.service ? 'border-red-500 focus:border-red-500' : 'border-gray-600 focus:border-white'}`}>
             <SelectValue placeholder="Select a plan" />
           </SelectTrigger>
           <SelectContent>
@@ -144,14 +127,10 @@ const ContactForm = () =>
       </div>
 
       <div>
-        <label htmlFor="message" className="contact-field">
-          Project Details
-        </label>
         <Textarea
           name="message"
-          required
           rows={6}
-          className={`h-32 contact-input resize-none ${errors.message ? 'border-red-500 focus:border-red-500' : ''}`}
+          className={`h-32 contact-input resize-none ${errors.message ? 'border-red-500 focus:border-red-500' : 'border-gray-600 focus:border-white'}`}
           placeholder="Tell us about your project, goals, and timeline..."
         />
       </div>
@@ -163,7 +142,7 @@ const ContactForm = () =>
           ? "bg-green-600 text-white cursor-not-allowed"
           : isSubmitting
             ? "bg-gray-400 text-gray-700 cursor-not-allowed"
-            : "bg-white text-black hover:bg-gray-200"
+            : "bg-white text-black hover:bg-gray-200 cursor-pointer"
           }`}
       >
         {isSubmitted
