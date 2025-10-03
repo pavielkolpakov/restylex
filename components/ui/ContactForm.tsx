@@ -46,7 +46,7 @@ const ContactForm = () => {
             type="text"
             name="name"
             required
-            className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
+            className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-sm"
             placeholder="John"
           />
         </div>
@@ -60,7 +60,7 @@ const ContactForm = () => {
           type="email"
           name="email"
           required
-          className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
+          className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-sm"
           placeholder="john@example.com"
         />
       </div>
@@ -73,7 +73,7 @@ const ContactForm = () => {
           type="text"
           name="company"
           required
-          className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg"
+          className="w-full h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-sm"
           placeholder="Your Company"
         />
       </div>
@@ -83,7 +83,7 @@ const ContactForm = () => {
           Service Interested In
         </label>
         <Select name="service" required>
-          <SelectTrigger className="w-full !h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-lg">
+          <SelectTrigger className="w-full !h-12 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 rounded-sm">
             <SelectValue placeholder="Select a plan" />
           </SelectTrigger>
           <SelectContent>
@@ -102,14 +102,14 @@ const ContactForm = () => {
           name="message"
           required
           rows={6}
-          className="w-full h-32 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 resize-none rounded-lg"
+          className="w-full h-32 px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-colors duration-300 resize-none rounded-sm"
           placeholder="Tell us about your project, goals, and timeline..."
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-white text-black py-4 px-8 font-semibold hover:bg-gray-200 transition-colors duration-300 rounded-lg"
+        className="w-full bg-white text-black py-4 px-8 font-semibold hover:bg-gray-200 transition-colors duration-300 rounded-sm"
       >
         Send Message
       </button>

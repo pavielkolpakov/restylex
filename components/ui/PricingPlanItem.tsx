@@ -7,9 +7,9 @@ import { Plan } from "../Pricing";
 export default function PricingPlanItem(plan: Plan) {
   return (
     <div
-      className={`relative p-8 bg-white border-2 transition-all duration-300 hover:shadow-lg flex flex-col cursor-pointer rounded-xl`}
+      className={`relative p-8 bg-white border-2 transition-all duration-300 hover:shadow-lg flex flex-col cursor-pointer rounded-md`}
     >
-      {plan.hot && (
+      {/* {plan.hot && (
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
           <span className="bg-black text-white px-4 py-2 text-sm font-medium rounded-lg">
             🔥 Hot Deal!
@@ -23,7 +23,7 @@ export default function PricingPlanItem(plan: Plan) {
             Best Price Value
           </span>
         </div>
-      )}
+      )} */}
 
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-black mb-2">{plan.name}</h3>
@@ -46,11 +46,10 @@ export default function PricingPlanItem(plan: Plan) {
 
       <div className="mt-auto">
         <button
-          className={`w-full py-4 px-6 font-semibold transition-all duration-300 flex items-center justify-center group cursor-pointer rounded-lg ${
-            plan.popular
-              ? "bg-black text-white hover:bg-gray-800"
-              : "bg-white text-black border-2 border-black hover:bg-black hover:text-white"
+          className={`w-full py-4 px-6 font-semibold transition-all duration-300 flex items-center justify-center group cursor-pointer rounded-sm ${
+            false ? "bg-black text-white hover:bg-gray-800" : "bg-white text-black border-2 border-black hover:bg-black hover:text-white"
           }`}
+          onClick={scrollToContact}
         >
           Get Started
           <FiArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -59,3 +58,7 @@ export default function PricingPlanItem(plan: Plan) {
     </div>
   );
 }
+
+const scrollToContact: VoidFunction = () => {
+  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+};

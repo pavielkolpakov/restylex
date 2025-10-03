@@ -47,7 +47,7 @@ const Process = () => {
           {steps.map((step, index) => (
             <div key={index} className="relative group">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 border-2 border-white group-hover:bg-white group-hover:text-black transition-all duration-300 mb-6 rounded-lg">
+                <div className="inline-flex items-center justify-center w-20 h-20 border-2 border-white group-hover:bg-white group-hover:text-black transition-all duration-300 mb-6 rounded-md">
                   <div className="text-white group-hover:text-black transition-colors duration-300">
                     {step.icon}
                   </div>
