@@ -17,13 +17,11 @@ const Header = () => {
           <HyperText 
             className="cursor-pointer" 
             text="Pricing"
-            duration={400}
             conteinerId="pricing"
           />
           <HyperText 
             className="cursor-pointer" 
             text="Contact"
-            duration={400}
             conteinerId="contact"
           />
         </div>
