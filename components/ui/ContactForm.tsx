@@ -3,6 +3,7 @@
 import React, { useState, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { RadioGroup } from "@/components/ui/radio-group";
 import
 {
   Select,
@@ -89,7 +90,7 @@ const ContactForm = () =>
           <Input
             type="text"
             name="name"
-            className={`contact-input h-12 ${errors.name ? 'border-red-500 focus:border-red-500' : ''}`}
+            className={`contact-input h-12 ${errors.name ? 'border-red-500 focus:border-red-500' : 'border-gray-600 focus:border-white'}`}
             placeholder="Full Name"
           />
         </div>
@@ -114,16 +115,15 @@ const ContactForm = () =>
       </div>
 
       <div>
-        <Select name="service">
-          <SelectTrigger className={`contact-input !h-12 ${errors.service ? 'border-red-500 focus:border-red-500' : 'border-gray-600 focus:border-white'}`}>
-            <SelectValue placeholder="Select a plan" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="base">Base</SelectItem>
-            <SelectItem value="advanced">Advanced</SelectItem>
-            <SelectItem value="custom">Custom</SelectItem>
-          </SelectContent>
-        </Select>
+        <RadioGroup 
+          name="service"
+          options={[
+            { value: "base", label: "Base" },
+            { value: "advanced", label: "Advanced" },
+            { value: "custom", label: "Custom" }
+          ]}
+        />
+        
       </div>
 
       <div>
@@ -133,6 +133,22 @@ const ContactForm = () =>
           className={`h-32 contact-input resize-none ${errors.message ? 'border-red-500 focus:border-red-500' : 'border-gray-600 focus:border-white'}`}
           placeholder="Tell us about your project, goals, and timeline..."
         />
+      </div>
+
+      <div>
+        <div className="text-white mb-4 font-medium ml-2">
+          Would you like to book a consulting call?
+        </div>
+        <div className="ml-2">
+          <RadioGroup
+            name="consultingCall"
+            options={[
+              { value: "yes", label: "Yes" },
+              { value: "no", label: "No" }
+            ]}
+            defaultValue="no"
+          />
+        </div>
       </div>
 
       <button
